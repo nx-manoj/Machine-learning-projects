@@ -6,6 +6,7 @@ A collection of end-to-end data-science projects — each one takes a raw datase
 
 | Project | Task | What's inside |
 |---|---|---|
+| **|d[Ia-Agro-Power-Water-Nexus](./India-Agro-Power-Water-Nexus)** | Econometric & ML | Econometric & Machine Learning Analysis of Crop Yields, Irrigation Electrification, and Aquifer Sustainability Across 20 Indian States, 2004–2025 — Panel OLS, Ridge FE, Random Forest, Gradient Boosting & K-Means Policy Clustering |
 | **[Bengaluru-Housing-Prices](Bengaluru-Housing-Prices/)** | Regression | 13,320 Bengaluru property listings. Cleaning rules with counts, EDA, five models compared on 5-fold CV, held-out evaluation at ₹27.6 L MAE. Notebook + 6-page report + 11-slide deck. |
 | **[BullDozer](BullDozer/)** | Regression | Bulldozer sale-price prediction. |
 | **[Heart Disease Analysis](notebooks/Heart%20Disease%20Analysis.ipynb)** | Classification | Exploratory analysis on the heart-disease dataset in [`data/`](data/). |
