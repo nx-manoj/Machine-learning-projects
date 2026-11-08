@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="deck-system" content="meridian">
+<meta name="type-floor" content="16">
+<meta name="qa-known-inks" content="#7D8B97">
+<title>India's air, 2017-2023</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="deck.css">
+<script src="deck-stage.js"></script>
+</head>
+<body>
+<!-- PLAN — meridian
+  01 Cover · ink field, serif display
+  02 Summary · 4 stat cards + takeaway
+  03 Coverage · column chart + takeaway
+  04 Trend · column chart, 2020 focused + takeaway
+  05 Seasonality · 12 columns, Nov focused + takeaway
+  06 Diurnal · line chart, two called-out points + takeaway
+  07 Cities · ranked horizontal bars + takeaway
+  08 Categories · dense table + takeaway
+  09 COVID · column chart, 2020 focused + takeaway
+  10 Forecast · model table + takeaway
+  11 Recommendations · ruled numbered rows + ink ask band
+  12 Limits · bullets + two rail callouts
+  13 Closing · ink field, serif display + 3 cards
+-->
+<deck-stage width="1920" height="1080">
+
+
+<section class="slide cover" data-label="Cover" data-screen-label="01" data-speaker-notes="Seven years of CPCB monitoring, 254,138 city-days. The argument: air improved modestly, but the season and the daily cycle move far more, and forecasting beats persistence by under 10%.">
+  <div class="brandline"><span>Data science case study</span><span>India · CPCB 2017–2023</span></div>
+  <div class="band">
+    <div class="accent-bar wide"></div>
+    <h1 class="display">India's air, 2017–2023: what seven years actually prove</h1>
+    <p class="lead">254,138 city-days from the CPCB AQI Repository — the trend, the season, the daily cycle, and how far a forecast can be trusted.</p>
+  </div>
+  <footer class="footer"><span>Source: CPCB AQI Repository; 248 cities, 29 states</span><span>November 2026</span></footer>
+</section>
+
+<section class="slide" data-label="Summary" data-screen-label="02" data-speaker-notes="254,138 city-days. 17.9% fall. 2.56x seasonal swing. 16.8% of days Poor or worse.">
+  <header class="head">
+    <span class="eyebrow">The argument in four numbers</span>
+    <h2 class="title">Air quality fell 17.9% since 2017, but the season moves 2.6 times more</h2>
+  </header>
+  <div class="band" style="display:flex;flex-direction:column;gap:30px;justify-content:center">
+   <div style="display:flex;gap:30px;flex:none">
+    <div class="card stat">
+      <div class="figure">254,138</div>
+      <div class="small" style="font-weight:500">City-days analysed</div>
+      <div class="delta">248 cities · 29 states</div>
+      <div class="note">collapsed from 501,972 station-days</div>
+    </div>
+    <div class="card stat hi">
+      <div class="figure">17.9<span class="unit">%</span></div>
+      <div class="small" style="font-weight:500">Mean AQI fell, 2017 to 2023</div>
+      <div class="delta">▼ 17.9% on a constant panel</div>
+      <div class="note">12 cities with data in all seven years</div>
+    </div>
+    <div class="card stat">
+      <div class="figure">2.6<span class="unit">×</span></div>
+      <div class="small" style="font-weight:500">November against the July trough</div>
+      <div class="delta">▲ 2.6× within one year</div>
+      <div class="note">season dwarfs the seven-year trend</div>
+    </div>
+    <div class="card stat">
+      <div class="figure">16.8<span class="unit">%</span></div>
+      <div class="small" style="font-weight:500">City-days Poor or worse</div>
+      <div class="delta">▲ one day in six</div>
+      <div class="note">only 14.6% qualify as Good</div>
+    </div>
+   </div>
+   <p class="lead" style="max-width:1400px">Every trend here is computed on cities that reported in every year of the window, so the comparison is like-for-like. The season, the daily cycle and the forecast ceiling all follow from that choice.</p>
+  </div>
+  <div class="takeaway"><span>So what</span><p>The improvement is real but modest — what governs Indian air is the calendar, not the trend line.</p></div>
+  <footer class="footer"><span class="source">Source: CPCB AQI Repository, 2017–2023; cleaned city-day panel</span><span class="note">Constant panel = 180+ reporting days every year</span><span>02</span></footer>
+</section>
+
+<section class="slide" data-label="Coverage" data-screen-label="03" data-speaker-notes="5,575 city-days in 2017 to 69,533 in 2023. This chart is about the network, not the air.">
+  <header class="head">
+    <span class="eyebrow">Data quality · the trap</span>
+    <h2 class="title">Reporting grew twelve-fold, so any national average measures the network</h2>
+  </header>
+  <div class="band" style="display:flex;flex-direction:column;min-height:0">
+    <div class="card" style="flex:1;min-height:0;display:flex;flex-direction:column;gap:18px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline">
+        <span class="h" style="font-size:26px">City-days reported each year</span>
+        <span class="label">Thousands</span>
+      </div>
+    <div style="position:relative;flex:1;min-height:0;padding-top:36px">
+      <div style="position:absolute;inset:36px 0 0 0"><div style="position:absolute;left:0;right:0;bottom:25%;height:1px;background:var(--grid)"></div><div style="position:absolute;left:0;right:0;bottom:50%;height:1px;background:var(--grid)"></div><div style="position:absolute;left:0;right:0;bottom:75%;height:1px;background:var(--grid)"></div><div style="position:absolute;left:0;right:0;bottom:100%;height:1px;background:var(--grid)"></div><div style="position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--axis)"></div></div>
+      <div style="position:relative;height:100%;display:flex;align-items:flex-end;gap:33px">
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">6k</span>
+        <div style="width:69px;height:6.7%;background:var(--mute)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">19k</span>
+        <div style="width:69px;height:23.3%;background:var(--mute)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">30k</span>
+        <div style="width:69px;height:36.1%;background:var(--mute)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">37k</span>
+        <div style="width:69px;height:44.2%;background:var(--mute)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">42k</span>
+        <div style="width:69px;height:50.5%;background:var(--mute)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">51k</span>
+        <div style="width:69px;height:60.6%;background:var(--mute)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:600;color:var(--ink-strong)">70k</span>
+        <div style="width:69px;height:83.3%;background:var(--mark)"></div>
+      </div>
+      </div>
+    </div>
+    <div style="display:flex;gap:33px"><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">2017</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">2018</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">2019</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">2020</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">2021</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">2022</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">2023</span></div>
+    </div>
+  </div>
+  <div class="takeaway"><span>Implication</span><p>Reporting grew from 48 cities to 247 — a national average over all rows measures coverage, not air.</p></div>
+  <footer class="footer"><span class="source">City-days after completeness filtering, 2017–2023</span><span class="note">All trends use a constant panel</span><span>03</span></footer>
+</section>
+
+<section class="slide" data-label="Trend" data-screen-label="04" data-speaker-notes="169 in 2017 to 138 in 2023. 2018 was worse than 2017; 2020 collapsed; 2021-22 rebounded.">
+  <header class="head">
+    <span class="eyebrow">The trend · 2017 to 2023</span>
+    <h2 class="title">On a constant 12-city panel, mean AQI fell 17.9% between 2017 and 2023</h2>
+  </header>
+  <div class="band" style="display:flex;flex-direction:column;min-height:0">
+    <div class="card" style="flex:1;min-height:0;display:flex;flex-direction:column;gap:18px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline">
+        <span class="h" style="font-size:26px">Mean daily AQI, 12-city constant panel</span>
+        <span class="label">AQI index</span>
+      </div>
+    <div style="position:relative;flex:1;min-height:0;padding-top:36px">
+      <div style="position:absolute;inset:36px 0 0 0"><div style="position:absolute;left:0;right:0;bottom:25%;height:1px;background:var(--grid)"></div><div style="position:absolute;left:0;right:0;bottom:50%;height:1px;background:var(--grid)"></div><div style="position:absolute;left:0;right:0;bottom:75%;height:1px;background:var(--grid)"></div><div style="position:absolute;left:0;right:0;bottom:100%;height:1px;background:var(--grid)"></div><div style="position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--axis)"></div></div>
+      <div style="position:relative;height:100%;display:flex;align-items:flex-end;gap:33px">
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">169</span>
+        <div style="width:69px;height:76.1%;background:var(--mute)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">179</span>
+        <div style="width:69px;height:80.6%;background:var(--mute)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">160</span>
+        <div style="width:69px;height:72.3%;background:var(--mute)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:600;color:var(--ink-strong)">136</span>
+        <div style="width:69px;height:61.3%;background:var(--mark)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">151</span>
+        <div style="width:69px;height:68.0%;background:var(--mute)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">148</span>
+        <div style="width:69px;height:66.5%;background:var(--mute)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">138</span>
+        <div style="width:69px;height:62.5%;background:var(--mute)"></div>
+      </div>
+      </div>
+    </div>
+    <div style="display:flex;gap:33px"><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">2017</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">2018</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">2019</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">2020</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">2021</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">2022</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">2023</span></div>
+    </div>
+  </div>
+  <div class="takeaway"><span>So what</span><p>Down 169 to 138, but not monotonically: 2020 is lockdown, 2021–22 a rebound.</p></div>
+  <footer class="footer"><span class="source">Cities reporting 180+ days in every year; 2020 highlighted</span><span class="note">A 52-city 2019–2023 panel confirms −12.6%</span><span>04</span></footer>
+</section>
+
+<section class="slide" data-label="Seasonality" data-screen-label="05" data-speaker-notes="Nov 177, Jul 69. Seasonal amplitude 2.56x against an 17.9% seven-year movement.">
+  <header class="head">
+    <span class="eyebrow">The season · monthly cycle</span>
+    <h2 class="title">November runs 2.6 times the July trough, dwarfing the trend since 2017</h2>
+  </header>
+  <div class="band" style="display:flex;flex-direction:column;min-height:0">
+    <div class="card" style="flex:1;min-height:0;display:flex;flex-direction:column;gap:18px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline">
+        <span class="h" style="font-size:26px">Mean daily AQI by month, all city-days</span>
+        <span class="label">AQI index</span>
+      </div>
+    <div style="position:relative;flex:1;min-height:0;padding-top:36px">
+      <div style="position:absolute;inset:36px 0 0 0"><div style="position:absolute;left:0;right:0;bottom:25%;height:1px;background:var(--grid)"></div><div style="position:absolute;left:0;right:0;bottom:50%;height:1px;background:var(--grid)"></div><div style="position:absolute;left:0;right:0;bottom:75%;height:1px;background:var(--grid)"></div><div style="position:absolute;left:0;right:0;bottom:100%;height:1px;background:var(--grid)"></div><div style="position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--axis)"></div></div>
+      <div style="position:relative;height:100%;display:flex;align-items:flex-end;gap:24px">
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">172</span>
+        <div style="width:58px;height:79.6%;background:var(--mute)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">151</span>
+        <div style="width:58px;height:69.8%;background:var(--mute)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">131</span>
+        <div style="width:58px;height:60.5%;background:var(--mute)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">125</span>
+        <div style="width:58px;height:57.7%;background:var(--mute)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">114</span>
+        <div style="width:58px;height:52.7%;background:var(--mute)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">98</span>
+        <div style="width:58px;height:45.2%;background:var(--mute)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">69</span>
+        <div style="width:58px;height:32.1%;background:var(--mute)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">69</span>
+        <div style="width:58px;height:32.1%;background:var(--mute)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">72</span>
+        <div style="width:58px;height:33.4%;background:var(--mute)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">127</span>
+        <div style="width:58px;height:58.9%;background:var(--mute)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:600;color:var(--ink-strong)">177</span>
+        <div style="width:58px;height:82.0%;background:var(--mark)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">175</span>
+        <div style="width:58px;height:81.0%;background:var(--mute)"></div>
+      </div>
+      </div>
+    </div>
+    <div style="display:flex;gap:24px"><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">Jan</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">Feb</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">Mar</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">Apr</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">May</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">Jun</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">Jul</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">Aug</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">Sep</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">Oct</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">Nov</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">Dec</span></div>
+    </div>
+  </div>
+  <div class="takeaway"><span>So what</span><p>A November-to-November comparison is the only one that separates policy from meteorology.</p></div>
+  <footer class="footer"><span class="source">All city-days 2017–2023; months in calendar order</span><span class="note">Winter: shallow boundary layer, inversions, residue burning</span><span>05</span></footer>
+</section>
+
+<section class="slide" data-label="Diurnal" data-screen-label="06" data-speaker-notes="Trough 100 at 17:00, peak 141 at 22:00. Boundary-layer effect, not just traffic.">
+  <header class="head">
+    <span class="eyebrow">The day · hourly cycle</span>
+    <h2 class="title">Air is cleanest at 17:00 and dirtiest at 22:00 — a 41% swing in one day</h2>
+  </header>
+  <div class="band" style="display:flex;flex-direction:column;min-height:0">
+    <div class="card" style="flex:1;min-height:0;display:flex;flex-direction:column;gap:18px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline">
+        <span class="h" style="font-size:26px">Mean AQI by hour of day, all 248 cities</span>
+        <span class="label">AQI index</span>
+      </div>
+      <div style="position:relative;flex:1;min-height:0;padding-top:36px;margin-right:96px">
+        <div style="position:absolute;inset:36px 0 0 0">
+          <div style="position:absolute;left:0;right:0;bottom:100%;height:1px;background:var(--grid)"></div>
+          <div style="position:absolute;left:0;right:0;bottom:50%;height:1px;background:var(--grid)"></div>
+          <div style="position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--axis)"></div>
+        </div>
+        <svg viewBox="0 0 1000 500" preserveAspectRatio="none" style="position:absolute;inset:36px 0 0 0;width:100%;height:calc(100% - 36px);overflow:visible">
+          <polyline points="0,118 43,183 87,240 130,287 174,325 217,353 261,361 304,333 348,252 391,173 435,171 478,228 522,298 565,352 609,392 652,423 696,443 739,449 783,413 826,287 870,135 913,55 957,43 1000,72" fill="none" stroke="var(--mark)" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+        </svg>
+        <i style="position:absolute;left:73.9%;top:calc(36px + (0.8985) * (100% - 36px));width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;background:var(--mark);box-shadow:0 0 0 3px var(--card)"></i>
+        <i style="position:absolute;left:95.7%;top:calc(36px + (0.0869) * (100% - 36px));width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;background:var(--mark);box-shadow:0 0 0 3px var(--card)"></i>
+        <span class="small num" style="position:absolute;left:calc(73.9% + 14px);top:calc(36px + (0.8985) * (100% - 36px) + 38px);transform:translateY(-50%);white-space:nowrap;font-weight:600;color:var(--ink-strong)">100 at 17:00</span>
+        <span class="small num" style="position:absolute;left:calc(95.7% - 14px);top:calc(36px + (0.0869) * (100% - 36px));transform:translate(-100%,-50%);white-space:nowrap;font-weight:600;color:var(--ink-strong)">141 at 22:00</span>
+      </div>
+      <div style="display:flex;margin-right:96px"><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">00</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">02</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">04</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">06</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">08</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">10</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">12</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">14</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">16</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">18</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">20</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">22</span></div>
+    </div>
+  </div>
+  <div class="takeaway"><span>So what</span><p>Afternoon mixing disperses pollutants; the evening inversion traps them. Traffic shapes the rise, physics sets its size.</p></div>
+  <footer class="footer"><span class="source">Mean of per-city hourly means, 2017–2023</span><span class="note">Dot marks the called-out points</span><span>06</span></footer>
+</section>
+
+<section class="slide" data-label="Cities" data-screen-label="07" data-speaker-notes="Ghaziabad 222, Bhiwadi 218, Noida 203, Delhi 202. Aizawl 28, Shillong 34, Madikeri 39.">
+  <header class="head">
+    <span class="eyebrow">Where · city ranking</span>
+    <h2 class="title">Ghaziabad's median day is eight times Aizawl's, in the same country</h2>
+  </header>
+  <div class="band" style="display:flex;flex-direction:column;justify-content:center;gap:14px">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px">
+      <span class="h" style="font-size:26px">Median daily AQI — worst six, then cleanest five</span>
+      <span class="label">AQI index</span>
+    </div>
+      <div style="display:grid;grid-template-columns:255px 1fr 90px;align-items:center;column-gap:18px">
+        <span class="small" style="font-weight:600;color:var(--ink-strong)">Ghaziabad</span>
+        <div style="height:36px;display:flex;align-items:center"><div style="width:85.5%;height:36px;background:var(--mark)"></div></div>
+        <span class="small num" style="text-align:right;font-weight:600;color:var(--ink-strong)">222</span>
+      </div>
+      <div style="display:grid;grid-template-columns:255px 1fr 90px;align-items:center;column-gap:18px">
+        <span class="small" style="font-weight:400;color:var(--ink-strong)">Bhiwadi</span>
+        <div style="height:36px;display:flex;align-items:center"><div style="width:83.9%;height:36px;background:var(--mute)"></div></div>
+        <span class="small num" style="text-align:right;font-weight:400;color:var(--ink-strong)">218</span>
+      </div>
+      <div style="display:grid;grid-template-columns:255px 1fr 90px;align-items:center;column-gap:18px">
+        <span class="small" style="font-weight:400;color:var(--ink-strong)">Noida</span>
+        <div style="height:36px;display:flex;align-items:center"><div style="width:78.0%;height:36px;background:var(--mute)"></div></div>
+        <span class="small num" style="text-align:right;font-weight:400;color:var(--ink-strong)">203</span>
+      </div>
+      <div style="display:grid;grid-template-columns:255px 1fr 90px;align-items:center;column-gap:18px">
+        <span class="small" style="font-weight:400;color:var(--ink-strong)">Delhi</span>
+        <div style="height:36px;display:flex;align-items:center"><div style="width:77.5%;height:36px;background:var(--mute)"></div></div>
+        <span class="small num" style="text-align:right;font-weight:400;color:var(--ink-strong)">202</span>
+      </div>
+      <div style="display:grid;grid-template-columns:255px 1fr 90px;align-items:center;column-gap:18px">
+        <span class="small" style="font-weight:400;color:var(--ink-strong)">Baghpat</span>
+        <div style="height:36px;display:flex;align-items:center"><div style="width:74.0%;height:36px;background:var(--mute)"></div></div>
+        <span class="small num" style="text-align:right;font-weight:400;color:var(--ink-strong)">192</span>
+      </div>
+      <div style="display:grid;grid-template-columns:255px 1fr 90px;align-items:center;column-gap:18px">
+        <span class="small" style="font-weight:400;color:var(--ink-strong)">Faridabad</span>
+        <div style="height:36px;display:flex;align-items:center"><div style="width:73.3%;height:36px;background:var(--mute)"></div></div>
+        <span class="small num" style="text-align:right;font-weight:400;color:var(--ink-strong)">190</span>
+      </div>
+      <div style="display:grid;grid-template-columns:255px 1fr 90px;align-items:center;column-gap:18px">
+        <span class="small" style="font-weight:400;color:var(--ink-strong)">Aizawl</span>
+        <div style="height:36px;display:flex;align-items:center"><div style="width:10.8%;height:36px;background:var(--mute)"></div></div>
+        <span class="small num" style="text-align:right;font-weight:400;color:var(--ink-strong)">28</span>
+      </div>
+      <div style="display:grid;grid-template-columns:255px 1fr 90px;align-items:center;column-gap:18px">
+        <span class="small" style="font-weight:400;color:var(--ink-strong)">Shillong</span>
+        <div style="height:36px;display:flex;align-items:center"><div style="width:13.3%;height:36px;background:var(--mute)"></div></div>
+        <span class="small num" style="text-align:right;font-weight:400;color:var(--ink-strong)">34</span>
+      </div>
+      <div style="display:grid;grid-template-columns:255px 1fr 90px;align-items:center;column-gap:18px">
+        <span class="small" style="font-weight:400;color:var(--ink-strong)">Madikeri</span>
+        <div style="height:36px;display:flex;align-items:center"><div style="width:15.1%;height:36px;background:var(--mute)"></div></div>
+        <span class="small num" style="text-align:right;font-weight:400;color:var(--ink-strong)">39</span>
+      </div>
+      <div style="display:grid;grid-template-columns:255px 1fr 90px;align-items:center;column-gap:18px">
+        <span class="small" style="font-weight:400;color:var(--ink-strong)">Chamarajanagar</span>
+        <div style="height:36px;display:flex;align-items:center"><div style="width:16.5%;height:36px;background:var(--mute)"></div></div>
+        <span class="small num" style="text-align:right;font-weight:400;color:var(--ink-strong)">43</span>
+      </div>
+      <div style="display:grid;grid-template-columns:255px 1fr 90px;align-items:center;column-gap:18px">
+        <span class="small" style="font-weight:400;color:var(--ink-strong)">Chikkamagaluru</span>
+        <div style="height:36px;display:flex;align-items:center"><div style="width:17.8%;height:36px;background:var(--mute)"></div></div>
+        <span class="small num" style="text-align:right;font-weight:400;color:var(--ink-strong)">46</span>
+      </div>
+  </div>
+  <div class="takeaway"><span>So what</span><p>The same country, the same years: an eight-fold gap between the worst median day and the cleanest.</p></div>
+  <footer class="footer"><span class="source">Cities with at least 1,000 city-days (n = 115); median of daily city AQI</span><span class="note">Ranked by median, not mean</span><span>07</span></footer>
+</section>
+
+<section class="slide" data-label="Categories" data-screen-label="08" data-speaker-notes="Good 14.6%, Satisfactory 36.0%, Moderate 32.6%, Poor 11.7%, Very Poor 4.4%, Severe 0.7%.">
+  <header class="head">
+    <span class="eyebrow">How bad · the distribution</span>
+    <h2 class="title">Only 15% of city-days are Good; one in six is Poor or worse</h2>
+  </header>
+  <div class="band" style="display:flex;flex-direction:column;justify-content:center">
+    <table class="table dense">
+      <thead><tr><th>CPCB category</th><th class="n">Share of city-days</th><th class="n">Cumulative</th><th class="n">AQI band</th></tr></thead>
+      <tbody><tr><td>Good</td><td class="n">14.6%</td><td class="n">14.6%</td><td class="n">≤ 50</td></tr><tr><td>Satisfactory</td><td class="n">36.0%</td><td class="n">50.6%</td><td class="n">51–100</td></tr><tr><td>Moderate</td><td class="n">32.6%</td><td class="n">83.2%</td><td class="n">101–200</td></tr><tr class="hi"><td>Poor</td><td class="n">11.7%</td><td class="n">94.9%</td><td class="n">201–300</td></tr><tr><td>Very Poor</td><td class="n">4.4%</td><td class="n">99.3%</td><td class="n">301–400</td></tr><tr><td>Severe</td><td class="n">0.7%</td><td class="n">100.0%</td><td class="n">401+</td></tr></tbody>
+      <tfoot><tr><td>Poor or worse</td><td class="n">16.8%</td><td class="n">—</td><td class="n">&gt; 200</td></tr></tfoot>
+    </table>
+  </div>
+  <div class="takeaway"><span>Implication</span><p>Roughly one city-day in six is Poor or worse, and those days concentrate in the Indo-Gangetic belt from November to January.</p></div>
+  <footer class="footer"><span class="source">CPCB bands applied to daily city AQI, all 254,138 city-days</span><span class="note">Bands: Good ≤50 · Satisfactory 51–100 · Moderate 101–200</span><span>08</span></footer>
+</section>
+
+<section class="slide" data-label="COVID" data-screen-label="09" data-speaker-notes="94 in 2020 against 159 in 2019. Rebound to 148 by 2022.">
+  <header class="head">
+    <span class="eyebrow">The experiment · lockdown</span>
+    <h2 class="title">The 2020 lockdown cut April–June AQI by 41%, and it rebounded within two years</h2>
+  </header>
+  <div class="band" style="display:flex;flex-direction:column;min-height:0">
+    <div class="card" style="flex:1;min-height:0;display:flex;flex-direction:column;gap:18px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline">
+        <span class="h" style="font-size:26px">Mean AQI, April–June only</span>
+        <span class="label">12-city constant panel</span>
+      </div>
+    <div style="position:relative;flex:1;min-height:0;padding-top:36px">
+      <div style="position:absolute;inset:36px 0 0 0"><div style="position:absolute;left:0;right:0;bottom:25%;height:1px;background:var(--grid)"></div><div style="position:absolute;left:0;right:0;bottom:50%;height:1px;background:var(--grid)"></div><div style="position:absolute;left:0;right:0;bottom:75%;height:1px;background:var(--grid)"></div><div style="position:absolute;left:0;right:0;bottom:100%;height:1px;background:var(--grid)"></div><div style="position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--axis)"></div></div>
+      <div style="position:relative;height:100%;display:flex;align-items:flex-end;gap:33px">
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">150</span>
+        <div style="width:69px;height:74.5%;background:var(--mute)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">162</span>
+        <div style="width:69px;height:80.6%;background:var(--mute)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">159</span>
+        <div style="width:69px;height:79.0%;background:var(--mute)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:600;color:var(--ink-strong)">94</span>
+        <div style="width:69px;height:46.7%;background:var(--mark)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">123</span>
+        <div style="width:69px;height:61.1%;background:var(--mute)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">148</span>
+        <div style="width:69px;height:73.7%;background:var(--mute)"></div>
+      </div>
+      <div style="flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px">
+        <span class="small num" style="font-weight:500;color:var(--ink-strong)">119</span>
+        <div style="width:69px;height:59.0%;background:var(--mute)"></div>
+      </div>
+      </div>
+    </div>
+    <div style="display:flex;gap:33px"><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">2017</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">2018</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">2019</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">2020</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">2021</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">2022</span><span class="small" style="flex:1 1 0;text-align:center;color:var(--ink-2)">2023</span></div>
+    </div>
+  </div>
+  <div class="takeaway"><span>So what</span><p>Traffic, construction and industry halted: 94 against 159 the year before, back to 148 by 2022.</p></div>
+  <footer class="footer"><span class="source">April–June of each year, 12-city constant panel</span><span class="note">Same months each year, so season is held constant</span><span>09</span></footer>
+</section>
+
+<section class="slide" data-label="Forecast" data-screen-label="10" data-speaker-notes="Persistence 31.2, ridge 28.4, gradient boosting 28.6. The ceiling is missing information, not capacity.">
+  <header class="head">
+    <span class="eyebrow">The model · forecast skill</span>
+    <h2 class="title">A ridge model beats persistence by 8.8%, and gradient boosting adds nothing</h2>
+  </header>
+  <div class="band" style="display:flex;flex-direction:column;justify-content:center">
+    <table class="table">
+      <thead><tr><th>Next-day AQI forecast</th><th class="n">MAE</th><th class="n">R²</th><th class="n">Within 50</th></tr></thead>
+      <tbody><tr><td>Persistence (tomorrow = today)</td><td class="n">31.2</td><td class="n">0.710</td><td class="n">80%</td></tr><tr><td>7-day rolling mean</td><td class="n">31.2</td><td class="n">0.737</td><td class="n">80%</td></tr><tr class="hi"><td>Ridge regression</td><td class="n">28.4</td><td class="n">0.779</td><td class="n">83%</td></tr><tr><td>Gradient boosting</td><td class="n">28.6</td><td class="n">0.769</td><td class="n">82%</td></tr></tbody>
+    </table>
+  </div>
+  <div class="takeaway"><span>Recommend</span><p>A well-specified linear model is the right complexity — extra capacity buys nothing until the features change.</p></div>
+  <footer class="footer"><span class="source">12 best-covered cities pooled; 23,080 city-days to end-2022, 4,365 tested in 2023</span><span class="note">Time split, not random</span><span>10</span></footer>
+</section>
+
+<section class="slide" data-label="Recommendations" data-screen-label="11" data-speaker-notes="Each recommendation maps to one finding: coverage, season, diurnal, model ceiling.">
+  <header class="head">
+    <span class="eyebrow">What to do with it</span>
+    <h2 class="title">Four decisions follow from the panel, the season and the forecast ceiling</h2>
+  </header>
+  <div class="band" style="display:flex;flex-direction:column;min-height:0">
+    <ol class="rows" style="flex:1">
+      <div><span class="numeral" style="font-size:39px">01</span>
+        <div style="flex:1;min-width:0"><div class="h" style="font-size:26px">Never quote a national average without the panel</div>
+        <div class="small muted">The network grew twelve-fold; an unqualified average measures coverage, not air.</div></div>
+        <span class="meta">Analysis</span></div>      <div><span class="numeral" style="font-size:39px">02</span>
+        <div style="flex:1;min-width:0"><div class="h" style="font-size:26px">Compare within a season</div>
+        <div class="small muted">A 2.6× annual cycle means a November-to-November comparison is the only fair one.</div></div>
+        <span class="meta">Policy</span></div>      <div><span class="numeral" style="font-size:39px">03</span>
+        <div style="flex:1;min-width:0"><div class="h" style="font-size:26px">Time outdoor activity to the afternoon trough</div>
+        <div class="small muted">The 17:00 minimum is 41% below the 22:00 peak — larger than most interventions achieve in a year.</div></div>
+        <span class="meta">Public health</span></div>      <div><span class="numeral" style="font-size:39px">04</span>
+        <div style="flex:1;min-width:0"><div class="h" style="font-size:26px">Spend the next effort on data, not models</div>
+        <div class="small muted">Meteorology and fire counts are worth more than any model change tested here.</div></div>
+        <span class="meta">Data team</span></div>
+    </ol>
+  </div>
+  <div class="takeaway ink"><span>Ask</span><p>Take the panel definition and the seasonal correction into any public claim about Indian air quality.</p></div>
+  <footer class="footer"><span class="source">Recommendations follow from the analysis, not from model fit alone</span><span class="note">Owner suggested, not assigned</span><span>11</span></footer>
+</section>
+
+<section class="slide" data-label="Limits" data-screen-label="12" data-speaker-notes="AQI index not measurement; no pollutants; no meteorology; station siting; 2020 break.">
+  <header class="head">
+    <span class="eyebrow">Limits</span>
+    <h2 class="title">Seven years of AQI data cannot say which pollutant drove a bad day</h2>
+  </header>
+  <div class="band" style="display:flex;gap:30px;min-height:0">
+    <ul class="list" style="flex:1 1 0;justify-content:center">
+      <li class="text"><span class="em">AQI is an index, not a measurement.</span> It reports the worst sub-index, so it hides which pollutant drove a given day; this dataset carries no pollutant breakdown.</li>
+      <li class="text"><span class="em">One number per city per day.</span> A median across monitors erases the intra-urban variation that determines personal exposure.</li>
+      <li class="text"><span class="em">Station siting changes.</span> A relocated or recalibrated monitor produces exactly the signature Varanasi's 65% fall shows.</li>
+    </ul>
+    <div style="flex:0 0 480px;display:flex;flex-direction:column;gap:18px;justify-content:center">
+      <div class="panel tint"><span class="eyebrow">Next data to add</span>
+        <h3 class="h">Pollutants and weather</h3>
+        <p class="small">PM2.5, PM10 and NO2 say what drove the index; wind, mixing height and fire counts are what would actually beat persistence.</p></div>
+      <div class="panel"><span class="eyebrow">Watch</span>
+        <h3 class="h">2020 is a structural break</h3>
+        <p class="small">Models trained across it learn a level that never recurs — exclude it or model it explicitly.</p></div>
+    </div>
+  </div>
+  <footer class="footer"><span class="source">Limitations are properties of the dataset, not of the modelling approach</span><span class="note">Each is fixable with different inputs</span><span>12</span></footer>
+</section>
+
+<section class="slide cover closing" data-label="Closing" data-screen-label="13" data-speaker-notes="Handover: executed notebook, seven-page report, this deck. All numbers regenerate from the raw CPCB parquet.">
+  <div class="brandline"><span>Where to take it next</span><span>Case study · November 2026</span></div>
+  <div class="band">
+    <div class="accent-bar wide"></div>
+    <h1 class="display">The air got better. The calendar still runs the country.</h1>
+    <p class="lead">Seven years of official monitoring, cleaned to 254,138 city-days. The next honest step is not a better model — it is pollutant and weather data.</p>
+  </div>
+  <div style="display:flex;gap:30px">
+    <div class="card"><span class="eyebrow">Notebook</span><div class="h">Reproducible</div><p class="small">Cleaning, panels and four forecast candidates, from the raw parquet.</p></div>
+    <div class="card"><span class="eyebrow">Report</span><div class="h">Seven pages</div><p class="small">Every figure sourced, every claim tied to the panel that supports it.</p></div>
+    <div class="card"><span class="eyebrow">This deck</span><div class="h">Thirteen slides</div><p class="small">Built to be read as a PDF after the meeting as much as projected in it.</p></div>
+  </div>
+  <footer class="footer"><span>Source: CPCB AQI Repository; 254,138 city-days</span><span>13</span></footer>
+</section>
+
+</deck-stage>
+</body>
+</html>

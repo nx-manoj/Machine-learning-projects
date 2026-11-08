@@ -1,0 +1,313 @@
+{
+  "audit": {
+    "raw_station_days": 562878,
+    "valid_station_days": 501972,
+    "city_days": 254138,
+    "cities": 248,
+    "states": 29,
+    "kept_pct": 89.2,
+    "start": "2017-01-01",
+    "end": "2023-12-31",
+    "rows_by_year": {
+      "2017": 5575,
+      "2018": 19407,
+      "2019": 30086,
+      "2020": 36880,
+      "2021": 42119,
+      "2022": 50538,
+      "2023": 69533
+    },
+    "coverage_growth": 12.5
+  },
+  "panel": {
+    "cities": 12,
+    "rows": 28039,
+    "trend_pct": -17.9,
+    "city_list": [
+      "Aurangabad",
+      "Bengaluru",
+      "Delhi",
+      "Faridabad",
+      "Ghaziabad",
+      "Gurugram",
+      "Hyderabad",
+      "Jodhpur",
+      "Mumbai",
+      "Muzaffarpur",
+      "Varanasi",
+      "Visakhapatnam"
+    ],
+    "year_mean": {
+      "2017": 168.6999969482422,
+      "2018": 178.8000030517578,
+      "2019": 160.39999389648438,
+      "2020": 136.0,
+      "2021": 150.6999969482422,
+      "2022": 147.5,
+      "2023": 138.5
+    },
+    "panel2_cities": 52,
+    "panel2_trend_pct": -12.6,
+    "panel2_year_mean": {
+      "2019": 140.8000030517578,
+      "2020": 120.5999984741211,
+      "2021": 132.39999389648438,
+      "2022": 129.5,
+      "2023": 123.0
+    }
+  },
+  "seasonal": {
+    "monthly": {
+      "1": 172.0,
+      "2": 150.89999389648438,
+      "3": 130.6999969482422,
+      "4": 124.5999984741211,
+      "5": 113.9000015258789,
+      "6": 97.5999984741211,
+      "7": 69.30000305175781,
+      "8": 69.4000015258789,
+      "9": 72.0999984741211,
+      "10": 127.19999694824219,
+      "11": 177.10000610351562,
+      "12": 175.0
+    },
+    "peak_month": 11,
+    "low_month": 7,
+    "swing_ratio": 2.56
+  },
+  "diurnal": {
+    "peak_hour": 22,
+    "low_hour": 17,
+    "peak_value": 140.7,
+    "low_value": 100.1,
+    "amplitude_pct": 40.6
+  },
+  "covid": {
+    "by_year": {
+      "2017": 150.0,
+      "2018": 162.39999389648438,
+      "2019": 159.0,
+      "2020": 94.0,
+      "2021": 123.0999984741211,
+      "2022": 148.39999389648438,
+      "2023": 118.80000305175781
+    },
+    "drop_vs_2019_pct": -40.9
+  },
+  "cities": {
+    "worst": [
+      {
+        "City": "Ghaziabad",
+        "n": 2355,
+        "med": 222.1999969482422,
+        "mean": 228.4
+      },
+      {
+        "City": "Bhiwadi",
+        "n": 1998,
+        "med": 218.1999969482422,
+        "mean": 220.5
+      },
+      {
+        "City": "Noida",
+        "n": 2362,
+        "med": 202.6999969482422,
+        "mean": 214.6
+      },
+      {
+        "City": "Delhi",
+        "n": 2536,
+        "med": 201.5,
+        "mean": 211.4
+      },
+      {
+        "City": "Baghpat",
+        "n": 1605,
+        "med": 192.5,
+        "mean": 201.7
+      },
+      {
+        "City": "Faridabad",
+        "n": 2329,
+        "med": 190.5,
+        "mean": 205.2
+      },
+      {
+        "City": "Gurugram",
+        "n": 2347,
+        "med": 190.5,
+        "mean": 200.3
+      },
+      {
+        "City": "Singrauli",
+        "n": 1958,
+        "med": 188.0,
+        "mean": 190.8
+      },
+      {
+        "City": "Meerut",
+        "n": 1563,
+        "med": 184.60000610351562,
+        "mean": 191.5
+      },
+      {
+        "City": "Bulandshahr",
+        "n": 1889,
+        "med": 180.0,
+        "mean": 191.0
+      }
+    ],
+    "cleanest": [
+      {
+        "City": "Aizawl",
+        "n": 1181,
+        "med": 28.0,
+        "mean": 41.5
+      },
+      {
+        "City": "Shillong",
+        "n": 1239,
+        "med": 34.5,
+        "mean": 47.4
+      },
+      {
+        "City": "Madikeri",
+        "n": 1079,
+        "med": 39.29999923706055,
+        "mean": 43.7
+      },
+      {
+        "City": "Chamarajanagar",
+        "n": 1064,
+        "med": 42.900001525878906,
+        "mean": 45.4
+      },
+      {
+        "City": "Chikkamagaluru",
+        "n": 1159,
+        "med": 46.400001525878906,
+        "mean": 50.3
+      },
+      {
+        "City": "Bagalkot",
+        "n": 1254,
+        "med": 46.5,
+        "mean": 52.5
+      }
+    ],
+    "n_cities_1000d": 115
+  },
+  "categories": {
+    "Good": 14.6,
+    "Satisfactory": 36.0,
+    "Moderate": 32.6,
+    "Poor": 11.7,
+    "Very Poor": 4.4,
+    "Severe": 0.7
+  },
+  "poor_plus_pct": 16.8,
+  "very_poor_pct": 5.1,
+  "city_change": {
+    "n_improved": 9,
+    "n_total": 12,
+    "median_change_pct": -13.9,
+    "best": [
+      {
+        "City": "Varanasi",
+        "2017-18": 237.4,
+        "2022-23": 82.1,
+        "change_%": -65.4
+      },
+      {
+        "City": "Jodhpur",
+        "2017-18": 218.6,
+        "2022-23": 144.0,
+        "change_%": -34.1
+      },
+      {
+        "City": "Ghaziabad",
+        "2017-18": 270.2,
+        "2022-23": 200.0,
+        "change_%": -26.0
+      }
+    ],
+    "worst": [
+      {
+        "City": "Visakhapatnam",
+        "2017-18": 118.5,
+        "2022-23": 121.9,
+        "change_%": 2.8
+      },
+      {
+        "City": "Bengaluru",
+        "2017-18": 69.9,
+        "2022-23": 72.7,
+        "change_%": 4.0
+      },
+      {
+        "City": "Mumbai",
+        "2017-18": 100.8,
+        "2022-23": 116.0,
+        "change_%": 15.1
+      }
+    ]
+  },
+  "model": {
+    "models": {
+      "Persistence (tomorrow = today)": {
+        "mae": 31.17,
+        "rmse": 47.43,
+        "r2": 0.7104,
+        "within_50": 80.3
+      },
+      "7-day rolling mean": {
+        "mae": 31.25,
+        "rmse": 45.18,
+        "r2": 0.7372,
+        "within_50": 79.5
+      },
+      "Ridge regression": {
+        "mae": 28.42,
+        "rmse": 41.44,
+        "r2": 0.7789,
+        "within_50": 83.0
+      },
+      "Gradient boosting": {
+        "mae": 28.62,
+        "rmse": 42.38,
+        "r2": 0.7688,
+        "within_50": 82.4
+      }
+    },
+    "best": "Ridge regression",
+    "lift_pct": 8.8,
+    "train_rows": 23080,
+    "test_rows": 4365,
+    "cities": [
+      "Delhi",
+      "Bengaluru",
+      "Mumbai",
+      "Hyderabad",
+      "Noida",
+      "Ghaziabad",
+      "Gurugram",
+      "Faridabad",
+      "Jodhpur",
+      "Howrah",
+      "Varanasi",
+      "Yamuna Nagar"
+    ],
+    "features": [
+      "lag1",
+      "lag2",
+      "lag3",
+      "lag7",
+      "roll7",
+      "roll30",
+      "month",
+      "dow",
+      "doy_sin",
+      "doy_cos"
+    ]
+  }
+}
