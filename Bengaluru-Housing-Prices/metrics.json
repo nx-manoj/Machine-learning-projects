@@ -1,0 +1,284 @@
+{
+  "audit": {
+    "raw_rows": 13320,
+    "raw_cols": 9,
+    "missing_pct": {
+      "area_type": 0.0,
+      "availability": 0.0,
+      "location": 0.0,
+      "size": 0.1,
+      "society": 41.3,
+      "total_sqft": 0.0,
+      "bath": 0.5,
+      "balcony": 4.6,
+      "price": 0.0
+    },
+    "duplicate_rows": 529,
+    "unique_locations": 1305,
+    "unique_societies": 2688
+  },
+  "clean": {
+    "raw_rows": 13320,
+    "final_rows": 11423,
+    "dropped_pct": 14.2,
+    "locations_raw": 1305,
+    "locations_grouped": 227,
+    "median_price_lakh": 70.0,
+    "median_ppsf": 5311,
+    "median_sqft": 1305
+  },
+  "funnel": [
+    {
+      "stage": "raw rows",
+      "rows_remaining": 13320,
+      "removed": 0
+    },
+    {
+      "stage": "unparseable area/config/price",
+      "rows_remaining": 13304,
+      "removed": 16
+    },
+    {
+      "stage": "area outside 300-10,000 sq ft",
+      "rows_remaining": 13251,
+      "removed": 53
+    },
+    {
+      "stage": "BHK outside 1-10",
+      "rows_remaining": 13239,
+      "removed": 12
+    },
+    {
+      "stage": "bathroom count missing",
+      "rows_remaining": 13182,
+      "removed": 57
+    },
+    {
+      "stage": "more bathrooms than rooms allow",
+      "rows_remaining": 13167,
+      "removed": 15
+    },
+    {
+      "stage": "under 300 sq ft per bedroom",
+      "rows_remaining": 12446,
+      "removed": 721
+    },
+    {
+      "stage": "price/sq ft beyond 3 sd of locality",
+      "rows_remaining": 12298,
+      "removed": 148
+    },
+    {
+      "stage": "exact duplicates",
+      "rows_remaining": 11423,
+      "removed": 875
+    }
+  ],
+  "models": [
+    {
+      "model": "Hist Gradient Boosting",
+      "r2_log": 0.7911,
+      "r2_log_std": 0.0057,
+      "mae_lakh": 30.57,
+      "mae_lakh_std": 3.1,
+      "rmse_lakh": 82.68
+    },
+    {
+      "model": "Random Forest",
+      "r2_log": 0.7847,
+      "r2_log_std": 0.0094,
+      "mae_lakh": 31.95,
+      "mae_lakh_std": 3.58,
+      "rmse_lakh": 94.58
+    },
+    {
+      "model": "Gradient Boosting",
+      "r2_log": 0.7754,
+      "r2_log_std": 0.0054,
+      "mae_lakh": 32.11,
+      "mae_lakh_std": 3.08,
+      "rmse_lakh": 86.33
+    },
+    {
+      "model": "Linear Regression",
+      "r2_log": 0.7225,
+      "r2_log_std": 0.0128,
+      "mae_lakh": 39.24,
+      "mae_lakh_std": 3.07,
+      "rmse_lakh": 158.63
+    },
+    {
+      "model": "Ridge (alpha=1)",
+      "r2_log": 0.7225,
+      "r2_log_std": 0.013,
+      "mae_lakh": 39.3,
+      "mae_lakh_std": 3.08,
+      "rmse_lakh": 160.27
+    }
+  ],
+  "best": {
+    "model": "Hist Gradient Boosting",
+    "r2_log": 0.8041,
+    "r2_price": 0.6787,
+    "mae_lakh": 27.56,
+    "rmse_lakh": 65.33,
+    "median_ape": 17.7,
+    "within_10": 30.8,
+    "within_20": 55.3,
+    "within_30": 72.6
+  },
+  "baseline": {
+    "mae_lakh": 55.96,
+    "r2_price": -0.086,
+    "median_price_lakh": 70.0
+  },
+  "bedroom_price_jump_pct": 51.3,
+  "bedroom_area_jump_pct": 37.0,
+  "bedroom_config_premium_pct": 10.5,
+  "bedroom_localities": 156,
+  "top_localities": [
+    {
+      "location_grouped": "Rajaji Nagar",
+      "n": 96,
+      "med_ppsf": 13719.0,
+      "med_price": 250.5,
+      "vs_city": 2.58
+    },
+    {
+      "location_grouped": "Malleshwaram",
+      "n": 49,
+      "med_ppsf": 12500.0,
+      "med_price": 252.0,
+      "vs_city": 2.35
+    },
+    {
+      "location_grouped": "Indira Nagar",
+      "n": 41,
+      "med_ppsf": 11565.0,
+      "med_price": 191.0,
+      "vs_city": 2.18
+    },
+    {
+      "location_grouped": "Frazer Town",
+      "n": 36,
+      "med_ppsf": 9964.0,
+      "med_price": 210.0,
+      "vs_city": 1.88
+    },
+    {
+      "location_grouped": "Koramangala",
+      "n": 67,
+      "med_ppsf": 9124.0,
+      "med_price": 150.0,
+      "vs_city": 1.72
+    },
+    {
+      "location_grouped": "Hebbal Kempapura",
+      "n": 31,
+      "med_ppsf": 9118.0,
+      "med_price": 170.0,
+      "vs_city": 1.72
+    },
+    {
+      "location_grouped": "Hosakerehalli",
+      "n": 34,
+      "med_ppsf": 8952.0,
+      "med_price": 151.5,
+      "vs_city": 1.69
+    },
+    {
+      "location_grouped": "Kundalahalli",
+      "n": 40,
+      "med_ppsf": 7432.0,
+      "med_price": 97.5,
+      "vs_city": 1.4
+    }
+  ],
+  "affordable_localities": [
+    {
+      "location_grouped": "Attibele",
+      "n": 39,
+      "med_ppsf": 2885.0,
+      "med_price": 24.9,
+      "vs_city": 0.54
+    },
+    {
+      "location_grouped": "Chandapura",
+      "n": 62,
+      "med_ppsf": 2951.0,
+      "med_price": 30.0,
+      "vs_city": 0.56
+    },
+    {
+      "location_grouped": "Electronic City Phase II",
+      "n": 100,
+      "med_ppsf": 3226.0,
+      "med_price": 40.0,
+      "vs_city": 0.61
+    },
+    {
+      "location_grouped": "Channasandra",
+      "n": 36,
+      "med_ppsf": 3576.0,
+      "med_price": 40.0,
+      "vs_city": 0.67
+    },
+    {
+      "location_grouped": "Begur Road",
+      "n": 68,
+      "med_ppsf": 3700.0,
+      "med_price": 49.3,
+      "vs_city": 0.7
+    },
+    {
+      "location_grouped": "Sarjapur",
+      "n": 78,
+      "med_ppsf": 3871.0,
+      "med_price": 50.0,
+      "vs_city": 0.73
+    }
+  ],
+  "cheapest_ppsf": 2885,
+  "priciest_ppsf": 13719,
+  "premium_ratio": 4.8,
+  "pct_ready_to_move": 79.6,
+  "pct_super_builtup": 69.2,
+  "median_ppsf": 5311,
+  "importance": [
+    {
+      "feature": "total_sqft",
+      "importance": 0.7634
+    },
+    {
+      "feature": "location_grouped",
+      "importance": 0.087
+    },
+    {
+      "feature": "area_type",
+      "importance": 0.0685
+    },
+    {
+      "feature": "bath",
+      "importance": 0.0565
+    },
+    {
+      "feature": "sqft_per_bhk",
+      "importance": 0.0122
+    },
+    {
+      "feature": "balcony",
+      "importance": 0.0117
+    },
+    {
+      "feature": "bhk",
+      "importance": 0.0094
+    },
+    {
+      "feature": "ready_to_move",
+      "importance": 0.0052
+    }
+  ],
+  "train_rows": 9138,
+  "test_rows": 2285,
+  "n_encoded_features": 151
+}
